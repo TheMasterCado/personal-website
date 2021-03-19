@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <Background></Background>
-    <Menu></Menu>
+    <!-- <Menu></Menu> -->
     <router-view />
   </div>
 </template>
 
 <script>
-import Menu from "@/components/Menu";
-import Background from "@/components/Background";
+// import Menu from "@/components/Menu";
+// import Background from "@/components/Background";
 
 export default {
   name: "App",
   components: {
-    Menu,
-    Background,
+    // Menu,
+    // Background,
   },
 };
 </script>

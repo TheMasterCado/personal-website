@@ -1,3 +1,16 @@
-html, body {
+html,
+body {
   height: 100%;
+  margin: 0;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &.section-socials {
+    background: $background-dark;
+  }
 }
