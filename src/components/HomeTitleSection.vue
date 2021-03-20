@@ -51,9 +51,9 @@ h2 {
 }
 
 .name span {
-  transition: all ease-in-out 1s;
+  transition: all $default_animation_curve 1s;
   &:hover {
-    transition: all ease-in-out 0.2s;
+    transition: all $default_animation_curve 0.2s;
     margin: 0 0.1em;
   }
 }

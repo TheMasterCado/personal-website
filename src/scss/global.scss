@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  // overflow: hidden;
   margin: 0;
 }
 
@@ -10,7 +11,47 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &.section-socials {
-    background: $background-dark;
-  }
+}
+
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  backface-visibility: hidden;
+  transform: rotate3d(0, 0, 0, 0);
+  transition: background-color 100ms ease-out, margin 100ms ease-out,
+    height 100ms ease-out, opacity 100ms ease-out;
+  background-color: $background-light;
+  opacity: 0.1;
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: $background-light;
+  opacity: 0.3;
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: $background-light;
+  opacity: 0.5;
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: $background-light;
+  opacity: 0.5;
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: $background-light;
+  opacity: 0.5;
 }
