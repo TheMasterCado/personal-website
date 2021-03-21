@@ -2,28 +2,20 @@
   <div class="section section-title">
     <div class="title">
       <h2>hi, I'm</h2>
-      <h1 class="name">
-        <span>T</span>
-        <span>h</span>
-        <span>e</span>
-        <span>M</span>
-        <span>a</span>
-        <span>s</span>
-        <span>t</span>
-        <span>e</span>
-        <span>r</span>
-        <span>C</span>
-        <span>a</span>
-        <span>d</span>
-        <span>o</span>
-      </h1>
+      <h1>TheMasterCado</h1>
     </div>
+    <HomeNext nextClass="section-projects"></HomeNext>
   </div>
 </template>
 
 <script>
+import HomeNext from "@/components/HomeNext";
+
 export default {
   name: "HomeTitleSection",
+  components: {
+    HomeNext,
+  },
 };
 </script>
 
@@ -37,6 +29,10 @@ h2 {
   font-family: Raleway, Arial;
   color: $foreground-light;
   cursor: default;
+  transition: all $default_animation_curve 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 h1 {
   font-size: 90px;
@@ -48,13 +44,5 @@ h2 {
   margin: 0;
   font-weight: bolder;
   text-align: left;
-}
-
-.name span {
-  transition: all $default_animation_curve 1s;
-  &:hover {
-    transition: all $default_animation_curve 0.2s;
-    margin: 0 0.1em;
-  }
 }
 </style>

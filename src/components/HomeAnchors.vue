@@ -17,7 +17,7 @@
 
 <script>
 import feather from "feather-icons";
-import scrollIntoView from "scroll-into-view";
+import { scrollTo } from "@/helpers/helpers";
 
 export default {
   name: "HomeAnchors",
@@ -25,9 +25,7 @@ export default {
     feather.replace();
   },
   methods: {
-    scrollTo: function (elClass) {
-      scrollIntoView(document.getElementsByClassName(elClass)[0]);
-    },
+    scrollTo: scrollTo,
   },
 };
 </script>
@@ -35,6 +33,7 @@ export default {
 <style scoped lang="scss">
 .home-anchors {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 30px;
   display: flex;
