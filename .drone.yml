@@ -13,7 +13,7 @@ steps:
     image: node:14
     commands:
       - npm install --unsafe-perm=true -g netlify-cli
-      - netlify deploy --dir=dist
+      - netlify deploy --dir=dist --prod
     environment:
       NETLIFY_AUTH_TOKEN:
         from_secret: NETLIFY_PAT
