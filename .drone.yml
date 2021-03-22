@@ -12,7 +12,6 @@ steps:
   - name: deploy
     image: node:14
     commands:
-      - cd extension
       - npm install -g netlify-cli
       - netlify deploy --dir=dist
     environment:
