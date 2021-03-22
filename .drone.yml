@@ -12,7 +12,7 @@ steps:
   - name: deploy
     image: node:14
     commands:
-      - npm install -g netlify-cli
+      - npm install --unsafe-perm=true -g netlify-cli
       - netlify deploy --dir=dist
     environment:
       NETLIFY_AUTH_TOKEN:
