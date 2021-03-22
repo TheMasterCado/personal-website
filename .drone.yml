@@ -5,12 +5,12 @@ name: build and deploy site
 
 steps:
   - name: build
-    image: node:15
+    image: node:14
     commands:
       - npm install
       - npm run build
   - name: deploy
-    image: node:15
+    image: node:14
     commands:
       - cd extension
       - npm install -g netlify-cli
