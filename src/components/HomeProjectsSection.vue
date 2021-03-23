@@ -20,10 +20,14 @@
         <p>More Realism</p>
         <p class="small">Parkitect mod</p>
       </a>
+    </div>
+    <div class="projects">
       <a href="https://github.com/TheMasterCado/easy-cli">
         <p>easy-cli</p>
         <p class="small">Crystal shard</p>
       </a>
+      <div class="dummy"></div>
+      <div class="dummy"></div>
     </div>
     <HomeNext nextClass="section-socials"></HomeNext>
   </div>
@@ -51,9 +55,8 @@ export default {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  max-width: 732px;
   a {
     color: $foreground-dark;
     text-decoration: none;
@@ -76,17 +79,6 @@ export default {
         font-size: 12px;
       }
     }
-    // svg {
-    //   width: 50px;
-    //   height: 50px;
-    // }
-    // p {
-    //   opacity: 0;
-    //   margin: 5px 0 0 0;
-    //   font-size: 12px;
-    //   transform: translateY(-10px);
-    //   transition: all $default_animation_curve 0.2s;
-    // }
     &:hover {
       background: $background-light-trans;
       p {
@@ -96,6 +88,9 @@ export default {
         }
       }
     }
+  }
+  .dummy {
+    width: 244px;
   }
 }
 h3 {

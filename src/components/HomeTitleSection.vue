@@ -2,7 +2,7 @@
   <div class="section section-title">
     <div class="title">
       <h2>hi, I'm</h2>
-      <h1>TheMasterCado</h1>
+      <h1>The<wbr />Master<wbr />Cado</h1>
     </div>
     <HomeNext nextClass="section-projects"></HomeNext>
   </div>
@@ -28,6 +28,7 @@ h1,
 h2 {
   font-family: Raleway, Arial;
   color: $foreground-light;
+  text-align: left;
   cursor: default;
   transition: all $default_animation_curve 1s;
   &:hover {

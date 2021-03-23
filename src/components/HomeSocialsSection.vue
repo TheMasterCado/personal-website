@@ -15,8 +15,8 @@
         <p>YouTube</p>
       </a>
       <a href="https://www.buymeacoffee.com/themastercado">
-        <i data-feather="dollar-sign"></i>
-        <p>Donations</p>
+        <i data-feather="coffee"></i>
+        <p>Support me</p>
       </a>
     </div>
   </div>
@@ -40,12 +40,13 @@ export default {
 }
 .socials {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   a {
     color: $foreground-dark;
     text-decoration: none;
-    margin: 0 3em;
+    margin: 2em 3em;
     transition: all $default_animation_curve 0.2s;
     svg {
       width: 50px;
@@ -53,6 +54,7 @@ export default {
     }
     p {
       font-family: "Roboto Condensed", Arial;
+      text-align: center;
       opacity: 0;
       margin: 5px 0 0 0;
       font-size: 12px;
